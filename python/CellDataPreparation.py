@@ -11,7 +11,7 @@ class CellDataPrep:
 
 
     def data_reorganization(self, cell):
-        fh5 = h5py.File("Data/C%02d_QM_1Wires_Data.hdf5"%(cell), "a")
+        fh5 = h5py.File("python/Data/C%02d_QM_1Wires_Data.hdf5"%(cell), "a")
 
         for num_pv in range(len(list(fh5.keys()))):
             wire_pv = list(fh5.keys())[num_pv]
@@ -77,7 +77,7 @@ class CellDataPrep:
 
 
     def data_transfer(self, cell, cell_data):
-        fh5 = h5py.File("Data/C%02d_QM_1Wires_Data.hdf5"%(cell), "a")
+        fh5 = h5py.File("python/Data/C%02d_QM_1Wires_Data.hdf5"%(cell), "a")
 
         for num_pv in range(4, len(list(fh5.keys()))):
             wire_pv = list(fh5.keys())[num_pv]

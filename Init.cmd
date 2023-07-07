@@ -1,6 +1,6 @@
 #autosave
-dbLoadRecords("$(EPICS_BASE)/db/save_restoreStatus.db", "P=OP-CT{IOC:$(IOCNAME)}")
-save_restoreSet_status_prefix("OP-CT{IOC:$(IOCNAME)}")
+#dbLoadRecords("$(EPICS_BASE)/db/save_restoreStatus.db", "P=OP-CT{IOC:$(IOCNAME)}")
+#save_restoreSet_status_prefix("OP-CT{IOC:$(IOCNAME)}")
 set_savefile_path("${PWD}/as","/save")
 set_requestfile_path("${PWD}/as","/req")
 system("install -m 777 -d ${PWD}/as/save")
@@ -17,7 +17,7 @@ set_pass1_restoreFile("settings.sav")
 iocInit()
 
 # Log when, where and who changed PV values
-caPutLogInit("ioclog.cs.nsls2.local:7004", 1)
+#caPutLogInit("ioclog.cs.nsls2.local:7004", 1)
 
 # dump PVs to a file
 dbl > /cf-update/$(HOSTNAME).$(IOCNAME).dbl

@@ -1,16 +1,22 @@
 # derived from Feng Bai's OneTimeCheckProgress.py
 
 import sys
-if len(sys.argv) != 2:
-    print("Cell number is required, i.e. python %s 01"%sys.argv[0])
-    sys.exit()
+if len(sys.argv) < 2:
+    sys.exit("Cell number is required, i.e. python %s 01"%sys.argv[0])
 
 cell = int(sys.argv[1])
 assert 1 <= cell <= 30, "Cell number is out of range [1, 30]"
 
 import time
+from datetime import datetime 
+# Run this script at ~7am everyday:
+hour_min = time.strftime("%H, %M")
+if not '07, 00' <= hour_min <= '07, 02':
+    sys.exit()
+    #sys.exit("%s: not time yet to process Cell %d ..."%(datetime.now(), cell))
+
+print("%s: processing Cell %d ..."%(datetime.now(), cell))
 t0 = time.time()
-from datetime import datetime
 
 from cothread.catools import caget, caput
 import os
@@ -62,11 +68,11 @@ slope_pvs += ["SR:OPS-C%02d-ML{1wire:%02d}Slope-I"%(cell, n_wire) for n_wire in 
 rate_pvs += ["SR:OPS-C%02d-ML{1wire:%02d}Rate-I"%(cell, n_wire) for n_wire in n_wires]
 predict_temp_pvs += ["SR:OPS-C%02d-ML{1wire:%02d}Predict_Temp-I"%(cell, n_wire) for n_wire in n_wires]
 predict_time_pvs += ["SR:OPS-C%02d-ML{1wire:%02d}Predict_Time-I"%(cell, n_wire) for n_wire in n_wires]
-print(temp_pvs)
+#print(temp_pvs)
 
 #retrieve the archived history data and save them in a file (per cell)
 end_time = None
-with h5py.File("Data/C%02d_QM_1Wires_Data.hdf5"%cell, "w") as fh5:
+with h5py.File("python/Data/C%02d_QM_1Wires_Data.hdf5"%cell, "w") as fh5:
     data = arget(temp_pvs, start="-%d days"%NumDayPerOperation, end=end_time, match=EXACT)
     if len(temp_pvs) != len(data):
         print("[WARNING] no history data retrieved for some PVs")
@@ -79,9 +85,9 @@ with h5py.File("Data/C%02d_QM_1Wires_Data.hdf5"%cell, "w") as fh5:
         fh5[pv_name] = vals
 
 # Data/Cxx_QM_1Wires_Data.hdf5 will be changed. So save a copy of it ...
-shutil.copy2("Data/C%02d_QM_1Wires_Data.hdf5"%cell, "Data/C%02d_QM_1Wires_Data_Orig.hdf5"%cell)
+shutil.copy2("python/Data/C%02d_QM_1Wires_Data.hdf5"%cell, "python/Data/C%02d_QM_1Wires_Data_Orig.hdf5"%cell)
 t1 = time.time()
-print("it takes %f-sec to retrieve %d-day history data"%(t1-t0, NumDayPerOperation))
+print("it takes %f-sec to retrieve %d-day history data in Cell %d"%(t1-t0, NumDayPerOperation, cell))
 
 # Initialize the data preparation; Transfer HDF5 to Variables
 from CellDataPreparation import CellDataPrep
@@ -89,7 +95,7 @@ prep = CellDataPrep(Minute, NumDayPerOperation, NumDataPerDay, NumDataPerOperati
 
 from CellData import CellVariableData
 from ResultsDataOneTimeCell import CellResultsData
-if 16 <= cell <= 18:
+if 17 <= cell <= 19:
     cell_data = CellVariableData(NumDataPerOperation, 24)
     cell_results = CellResultsData(24)
 else:
@@ -100,7 +106,7 @@ prep.data_reorganization(cell)
 cell_data = prep.data_transfer(cell, cell_data)
 #print(cell_data.data_matrix_pv.shape)
 t2 = time.time()
-print("it takes %f-sec to re-organize and transfer data"%(t2-t1))
+print("it takes %f-sec to re-organize and transfer data in Cell %d"%(t2-t1, cell))
 #print(cell_data.data_matrix_pv)
 
 # Establish the ML Model based on the Given Operational Period
@@ -110,13 +116,13 @@ MLSystem = ML_and_Prediction_One_Time_Check(Minute, NumDataPerDay, NumDataPerOpe
   
 # One Time Check ML Model and Prediction
 _, _, CellOutput = MLSystem.one_time_ml_check_cell(cell_data, cell_results)
-print("Results of Cell %02d: "%cell)
-print("The slopes parameters are: ", *CellOutput.slope)
-print("The rate parameters are: ", *CellOutput.rate)
-print("The predict temperature parameters are: ", *CellOutput.predict_temp)
-print("The predict long time parameters are: ", *CellOutput.predict_time)
+#print("Results of Cell %02d: "%cell)
+#print("The slopes parameters are: ", *CellOutput.slope)
+##print("The rate parameters are: ", *CellOutput.rate)
+##print("The predict temperature parameters are: ", *CellOutput.predict_temp)
+##print("The predict long time parameters are: ", *CellOutput.predict_time)
 t3 = time.time()
-print("it takes %f-sec to process data and get results"%(t3-t2))
+print("it takes %f-sec to process data and get results in Cell %d"%(t3-t2, cell))
 
 caput(slope_pvs, CellOutput.slope)
 caput(rate_pvs, CellOutput.rate)

@@ -6,14 +6,13 @@ epicsEnvSet("PWD","/epics/iocs/MachineLearn")
 
 #the line above (#!...) is not a comment: it actually executes the IOC binary  
 # load common settings, including conda/python environment 
-</epics/iocs/elauncher/commonSt.cmd
-#</epics/iocs/elauncher-debian/commonSt.cmd
+#</epics/iocs/elauncher/commonSt.cmd
+</epics/iocs/MachineLearn/commonSt.cmd
 
 # other environment variable(s), including the person who is in charge
 epicsEnvSet("ENGINEER","smithr x7385")
 
 ## Load record instances
-
 dbLoadRecords("./db/MLinput.db")
 dbLoadRecords("./db/MLoutput_03.db")
 dbLoadRecords("./db/MLoutput_17.db")
@@ -45,48 +44,7 @@ dbLoadRecords("./db/MLoutput_default.db", "CELL=27")
 dbLoadRecords("./db/MLoutput_default.db", "CELL=28")
 dbLoadRecords("./db/MLoutput_default.db", "CELL=29")
 dbLoadRecords("./db/MLoutput_default.db", "CELL=30")
-
-
-#dbLoadRecords("./db/opSum.db")
-#dbLoadRecords("./db/opMessages.db")
-#dbLoadRecords("./db/slitAlarm.db")
-#dbLoadRecords("./db/FEalarms.db")
-#dbLoadRecords("./db/linacAlarms.db")
-#dbLoadRecords("./db/radMon.db")
-#dbLoadRecords("./db/alarmEnable.db")
-#dbLoadRecords("./db/injectionEfficiency.db")
-#dbLoadRecords("./db/alSumBR-VAC.db")
-#dbLoadRecords("./db/alSumBR-RF.db")
-#dbLoadRecords("./db/psAlarms.db")
-#dbLoadRecords("./db/psCellAlarms.db")
-#dbLoadRecords("./db/iocAdminSoft.db", "IOC=OP-CT{IOC:opsum}")
-#dbLoadRecords("./db/BR_BTS_VAC_Sum.db")
-#dbLoadRecords("./db/LN_Vac_Alarm_Sum_PVs.db")
-#dbLoadRecords("./db/LTB_Vac_Alarm_Sum_PVs.db")
-#dbLoadRecords("./db/SR_VacSum.db")
-#dbLoadRecords("./db/SR_VacSumShort.db")
-#dbLoadRecords("./db/SR_VacSumBM.db")
-#dbLoadRecords("./db/SR_VacSumOutlier.db")
-#dbLoadRecords("./db/SR_EPS_flow_warn.db")
-#dbLoadRecords("./db/SR_EPS_flow_trip.db")
-#dbLoadRecords("./db/SR_MG_1wire62.db")
-#dbLoadRecords("./db/SR_MG_1wire66.db")
-#dbLoadRecords("./db/ahu.db")
-#dbLoadRecords("./db/BPMsum.db")
-#dbLoadRecords("./db/BPMalarm6.db")
-#dbLoadRecords("./db/BPMalarm8.db")
-#dbLoadRecords("./db/BPMalarm9.db")
-#dbLoadRecords("./db/BPMalarm10.db")
-#dbLoadRecords("./db/UPSalarms.db")
-#dbLoadRecords("./db/WaterAlarms.db")
-#dbLoadRecords("./db/DW-SumAlarm.db")
-#dbLoadRecords("./db/DW-AlarmsSub.db")
-#dbLoadRecords("./db/ID_Gap_AlarmsSub.db")
-#dbLoadRecords("./db/SR_SteamTunnel.db")
-#dbLoadRecords("./db/MiscAlarms.db")
-#dbLoadRecords("./db/c23_CantPhas.db")
-#dbLoadRecords("./db/RTMSmax.db")
-#dbLoadRecords("./db/IDmpsSum.db")
+dbLoadTemplate("./db/MLrun.substitutions")
 
 # initialize the IOC with Access security control, autosave, caPutLog, etc. 
 #</epics/iocs/elauncher/commonInitWithAutoSave.cmd
