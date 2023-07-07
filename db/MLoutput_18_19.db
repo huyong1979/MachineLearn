@@ -1,0 +1,683 @@
+#ML for monitoring QM2 temperatures - outputs_default
+
+#############################################################################################
+##    <cells 18,19>                                                                        ##
+##    <1-wire 33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56>     ##
+#############################################################################################
+
+####33####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:33}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:33}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:33}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:33}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####34####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:34}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:34}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:34}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:34}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####35####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:35}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:35}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:35}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:35}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####36####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:36}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:36}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:36}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:36}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####37####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:37}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:37}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:37}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:37}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####38####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:38}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:38}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:38}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:38}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####39####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:39}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:39}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:39}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:39}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####40####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:40}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:40}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:40}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:40}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####41####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:41}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:41}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:41}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:41}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####42####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:42}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:42}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:42}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:42}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####43####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:43}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:43}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:43}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:43}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####44####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:44}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:44}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:44}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:44}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####45####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:45}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:45}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:45}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:45}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####46####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:46}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:46}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:46}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:46}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####47####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:47}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:47}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:47}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:47}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####48####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:48}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:48}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:48}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:48}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####49####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:49}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:49}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:49}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:49}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####50####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:50}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:50}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:50}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:50}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####51####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:51}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:51}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:51}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:51}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####52####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:52}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:52}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:52}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:52}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####53####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:53}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:53}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:53}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:53}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####54####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:54}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:54}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:54}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:54}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####55####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:55}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:55}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:55}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:55}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####56####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:56}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:56}Predict_Temp-I"){
+    field(DESC, "predict. temp in 7 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:56}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:56}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+
+####TOTALS####
+#slope#
+record(calc, "SR:OPS-C$(CELL)-ML{max}Slope-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:33}Slope-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:34}Slope-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:35}Slope-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:36}Slope-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:37}Slope-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:38}Slope-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:39}Slope-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:40}Slope-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:41}Slope-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:42}Slope-I NPP")
+    field(INPK, "SR:OPS-C$(CELL)-ML{1wire:43}Slope-I NPP")
+    field(INPL, "SR:OPS-C$(CELL)-ML{1wire:44}Slope-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Slope-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:45}Slope-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:46}Slope-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:47}Slope-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:48}Slope-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:49}Slope-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:50}Slope-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:51}Slope-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:52}Slope-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:53}Slope-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:54}Slope-I NPP")
+    field(INPK, "SR:OPS-C$(CELL)-ML{1wire:55}Slope-I NPP")
+    field(INPL, "SR:OPS-C$(CELL)-ML{1wire:56}Slope-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Slope-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-C$(CELL)-ML{max}Slope-I:1 PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{max}Slope-I:2 NPP")
+}
+
+#rate#
+record(calc, "SR:OPS-C$(CELL)-ML{max}Rate-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:33}Rate-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:34}Rate-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:35}Rate-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:36}Rate-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:37}Rate-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:38}Rate-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:39}Rate-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:40}Rate-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:41}Rate-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:42}Rate-I NPP")
+    field(INPK, "SR:OPS-C$(CELL)-ML{1wire:43}Rate-I NPP")
+    field(INPL, "SR:OPS-C$(CELL)-ML{1wire:44}Rate-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Rate-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:45}Rate-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:46}Rate-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:47}Rate-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:48}Rate-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:49}Rate-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:50}Rate-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:51}Rate-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:52}Rate-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:53}Rate-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:54}Rate-I NPP")
+    field(INPK, "SR:OPS-C$(CELL)-ML{1wire:55}Rate-I NPP")
+    field(INPL, "SR:OPS-C$(CELL)-ML{1wire:56}Rate-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Rate-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-C$(CELL)-ML{max}Rate-I:1 PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{max}Rate-I:2 NPP")
+}
+
+#predicted temp#
+record(calc, "SR:OPS-C$(CELL)-ML{max}Predict_Temp-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:33}Predict_Temp-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:34}Predict_Temp-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:35}Predict_Temp-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:36}Predict_Temp-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:37}Predict_Temp-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:38}Predict_Temp-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:39}Predict_Temp-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:40}Predict_Temp-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:41}Predict_Temp-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:42}Predict_Temp-I NPP")
+    field(INPK, "SR:OPS-C$(CELL)-ML{1wire:43}Predict_Temp-I NPP")
+    field(INPL, "SR:OPS-C$(CELL)-ML{1wire:44}Predict_Temp-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Predict_Temp-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:45}Predict_Temp-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:46}Predict_Temp-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:47}Predict_Temp-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:48}Predict_Temp-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:49}Predict_Temp-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:50}Predict_Temp-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:51}Predict_Temp-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:52}Predict_Temp-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:53}Predict_Temp-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:54}Predict_Temp-I NPP")
+    field(INPK, "SR:OPS-C$(CELL)-ML{1wire:55}Predict_Temp-I NPP")
+    field(INPL, "SR:OPS-C$(CELL)-ML{1wire:56}Predict_Temp-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Predict_Temp-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-C$(CELL)-ML{max}Predict_Temp-I:1 PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{max}Predict_Temp-I:2 NPP")
+}
+
+#predicted time#
+record(calc, "SR:OPS-C$(CELL)-ML{max}Predict_Time-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:33}Predict_Time-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:34}Predict_Time-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:35}Predict_Time-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:36}Predict_Time-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:37}Predict_Time-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:38}Predict_Time-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:39}Predict_Time-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:40}Predict_Time-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:41}Predict_Time-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:42}Predict_Time-I NPP")
+    field(INPK, "SR:OPS-C$(CELL)-ML{1wire:43}Predict_Time-I NPP")
+    field(INPL, "SR:OPS-C$(CELL)-ML{1wire:44}Predict_Time-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Predict_Time-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:45}Predict_Time-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:46}Predict_Time-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:47}Predict_Time-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:48}Predict_Time-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:49}Predict_Time-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:50}Predict_Time-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:51}Predict_Time-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:52}Predict_Time-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:53}Predict_Time-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:54}Predict_Time-I NPP")
+    field(INPK, "SR:OPS-C$(CELL)-ML{1wire:55}Predict_Time-I NPP")
+    field(INPL, "SR:OPS-C$(CELL)-ML{1wire:56}Predict_Time-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Predict_Time-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-C$(CELL)-ML{max}Predict_Time-I:1 PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{max}Predict_Time-I:2 NPP")
+}

@@ -1,0 +1,9 @@
+as/
+bin/
+dbd/
+O.*
+envPaths
+\#*#
+*~
+python/Data
+python/__pycache__

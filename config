@@ -1,0 +1,11 @@
+NAME=MachineLearn
+PORT=9034
+USER=softioc
+#HOST=physics03
+#HOST=phyioc02
+HOST=physics3
+#HOST=hlaioc02
+
+#CHDIR="."
+#EXEC="$CHDIR/st.cmd"
+
