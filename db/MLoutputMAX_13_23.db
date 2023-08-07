@@ -1,0 +1,271 @@
+#ML for monitoring QM2 temperatures - outputsMAX, C13&23, Feng's version
+
+#############################################################################################
+##    <cell 13,23>                                                                         ##
+##    <1-wire 37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56>                 ##
+#############################################################################################
+
+
+
+####TOTALS####
+#slope#
+record(calc, "SR:OPS-C$(CELL)-ML{max}Slope-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:37}Slope-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:38}Slope-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:39}Slope-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:40}Slope-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:41}Slope-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:42}Slope-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:43}Slope-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:44}Slope-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:45}Slope-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:46}Slope-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Slope-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:47}Slope-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:48}Slope-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:49}Slope-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:50}Slope-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:51}Slope-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:52}Slope-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:53}Slope-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:54}Slope-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:55}Slope-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:56}Slope-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Slope-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-C$(CELL)-ML{max}Slope-I:1 PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{max}Slope-I:2 NPP")
+}
+
+#predicted temp#
+    #T1#
+record(calc, "SR:OPS-C$(CELL)-ML{max}T1_Temp-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:37}T1_Temp-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:38}T1_Temp-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:39}T1_Temp-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:40}T1_Temp-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:41}T1_Temp-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:42}T1_Temp-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:43}T1_Temp-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:44}T1_Temp-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:45}T1_Temp-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:46}T1_Temp-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}T1_Temp-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:47}T1_Temp-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:48}T1_Temp-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:49}T1_Temp-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:50}T1_Temp-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:51}T1_Temp-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:52}T1_Temp-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:53}T1_Temp-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:54}T1_Temp-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:55}T1_Temp-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:56}T1_Temp-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}T1_Temp-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-C$(CELL)-ML{max}T1_Temp-I:1 PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{max}T1_Temp-I:2 NPP")
+}
+    #T2#
+record(calc, "SR:OPS-C$(CELL)-ML{max}T2_Temp-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:37}T2_Temp-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:38}T2_Temp-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:39}T2_Temp-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:40}T2_Temp-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:41}T2_Temp-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:42}T2_Temp-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:43}T2_Temp-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:44}T2_Temp-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:45}T2_Temp-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:46}T2_Temp-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}T2_Temp-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:47}T2_Temp-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:48}T2_Temp-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:49}T2_Temp-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:50}T2_Temp-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:51}T2_Temp-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:52}T2_Temp-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:53}T2_Temp-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:54}T2_Temp-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:55}T2_Temp-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:56}T2_Temp-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}T2_Temp-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-C$(CELL)-ML{max}T2_Temp-I:1 PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{max}T2_Temp-I:2 NPP")
+}
+    #T3#
+record(calc, "SR:OPS-C$(CELL)-ML{max}T3_Temp-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:37}T3_Temp-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:38}T3_Temp-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:39}T3_Temp-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:40}T3_Temp-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:41}T3_Temp-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:42}T3_Temp-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:43}T3_Temp-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:44}T3_Temp-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:45}T3_Temp-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:46}T3_Temp-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}T3_Temp-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:47}T3_Temp-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:48}T3_Temp-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:49}T3_Temp-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:50}T3_Temp-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:51}T3_Temp-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:52}T3_Temp-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:53}T3_Temp-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:54}T3_Temp-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:55}T3_Temp-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:56}T3_Temp-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}T3_Temp-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-C$(CELL)-ML{max}T3_Temp-I:1 PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{max}T3_Temp-I:2 NPP")
+}
+    #T4#
+record(calc, "SR:OPS-C$(CELL)-ML{max}T4_Temp-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:37}T4_Temp-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:38}T4_Temp-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:39}T4_Temp-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:40}T4_Temp-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:41}T4_Temp-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:42}T4_Temp-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:43}T4_Temp-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:44}T4_Temp-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:45}T4_Temp-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:46}T4_Temp-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}T4_Temp-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:47}T4_Temp-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:48}T4_Temp-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:49}T4_Temp-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:50}T4_Temp-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:51}T4_Temp-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:52}T4_Temp-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:53}T4_Temp-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:54}T4_Temp-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:55}T4_Temp-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:56}T4_Temp-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}T4_Temp-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-C$(CELL)-ML{max}T4_Temp-I:1 PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{max}T4_Temp-I:2 NPP")
+}
+
+#predicted time#
+record(calc, "SR:OPS-C$(CELL)-ML{max}Predict_Time-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:37}Predict_Time-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:38}Predict_Time-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:39}Predict_Time-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:40}Predict_Time-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:41}Predict_Time-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:42}Predict_Time-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:43}Predict_Time-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:44}Predict_Time-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:45}Predict_Time-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:46}Predict_Time-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Predict_Time-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:47}Predict_Time-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:48}Predict_Time-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:49}Predict_Time-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:50}Predict_Time-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:51}Predict_Time-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:52}Predict_Time-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:53}Predict_Time-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:54}Predict_Time-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:55}Predict_Time-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:56}Predict_Time-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Predict_Time-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-C$(CELL)-ML{max}Predict_Time-I:1 PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{max}Predict_Time-I:2 NPP")
+}
+
+#rate#
+record(calc, "SR:OPS-C$(CELL)-ML{max}Rate-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:37}Rate-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:38}Rate-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:39}Rate-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:40}Rate-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:41}Rate-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:42}Rate-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:43}Rate-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:44}Rate-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:45}Rate-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:46}Rate-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Rate-I"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:47}Rate-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:48}Rate-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:49}Rate-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:50}Rate-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:51}Rate-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:52}Rate-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:53}Rate-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:54}Rate-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:55}Rate-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:56}Rate-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Rate-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-C$(CELL)-ML{max}Rate-I:1 PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{max}Rate-I:2 NPP")
+}
+
+#least-squares error#
+record(calc, "SR:OPS-C$(CELL)-ML{max}Error-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:37}Error-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:38}Error-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:39}Error-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:40}Error-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:41}Error-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:42}Error-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:43}Error-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:44}Error-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:45}Error-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:46}Error-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Error-I"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:47}Error-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:48}Error-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:49}Error-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:50}Error-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:51}Error-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:52}Error-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:53}Error-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:54}Error-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:55}Error-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:56}Error-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Error-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-C$(CELL)-ML{max}Error-I:1 PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{max}Error-I:2 NPP")
+}

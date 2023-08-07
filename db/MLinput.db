@@ -1,7 +1,7 @@
 #Input Parameters for QM2 temperature tracking ML code
 
 #timing
-record(ao,  "SR:OPS-ML{1time}Time-SP"){
+record(ao,  "SR:OPS-ML{$(MODE)}Time-SP"){
     field(DESC, "minutes between measurements") 
     field(EGU,  "minutes")
     field(VAL,  "5")
@@ -11,29 +11,29 @@ record(ao,  "SR:OPS-ML{1time}Time-SP"){
 }
 
 #test period
-record(ao,  "SR:OPS-ML{1time}Coef-SP"){
+record(ao,  "SR:OPS-ML{$(MODE)}Coef-SP"){
     field(DESC, "test period coefficient")	
     field(VAL,  "1")
     info(autosaveFields, "VAL")
 }
 
 #data amount
-record(ao,  "SR:OPS-ML{1time}DataAmnt-SP"){
+record(ao,  "SR:OPS-ML{$(MODE)}DataAmnt-SP"){
     field(DESC, "# Data per period")
     field(VAL,  "48")
     info(autosaveFields, "VAL")
 }
 
 #measurement length
-record(ao,  "SR:OPS-ML{1time}MeasLen-SP"){
-    field(DESC, "length of data to model, days")
+record(ao,  "SR:OPS-ML{$(MODE)}MeasLen-SP"){
+    field(DESC, "length of data to MODEl, days")
     field(EGU,  "days")
     field(VAL,  "14")
     info(autosaveFields, "VAL")
 }
 
 #prediction length
-record(ao,  "SR:OPS-ML{1time}PredictLen-SP"){
+record(ao,  "SR:OPS-ML{$(MODE)}PredictLen-SP"){
     field(DESC, "length of prediction, days")
     field(EGU,  "days")
     field(VAL,  "30")
@@ -41,18 +41,36 @@ record(ao,  "SR:OPS-ML{1time}PredictLen-SP"){
 }
 
 #ML method
-record(mbbo,  "SR:OPS-ML{1time}MLMethod-SP"){
+record(mbbo,  "SR:OPS-ML{$(MODE)}MLMethod-SP"){
     field(DESC, "test period coefficient")
     field(ZRST, "Error - Illegal Value")
     field(ONST, "Least Squares")
-    field(TWST, "Lasso")
+    field(TWST, "Quadratic")
+    field(THST, "Lasso")
     field(VAL,  "1")
     info(autosaveFields, "VAL")
 }
 
 #Regularization parameter
-record(ao,  "SR:OPS-ML{1time}LamdaReg-SP"){
+record(ao,  "SR:OPS-ML{$(MODE)}LamdaReg-SP"){
     field(DESC, "test regularization coefficient")
     field(VAL,  "1")
     info(autosaveFields, "VAL")
 }
+
+#Threshold temp
+record(ao,  "SR:OPS-ML{$(MODE)}ThreshTemp-SP"){
+    field(DESC, "Threshold temperature")
+    field(EGU,  "deg C")
+    field(VAL,  "40")
+    info(autosaveFields, "VAL")
+}
+
+#Warning temp
+record(ao,  "SR:OPS-ML{$(MODE)}WarnTemp-SP"){
+    field(DESC, "Warning temperature")
+    field(EGU,  "deg C")
+    field(VAL,  "60")
+    info(autosaveFields, "VAL")
+}
+

@@ -26,6 +26,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:37}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:37}Error-I"){
+    field(DESC, "least-squares error")
+}
 
 ####38####
 #slope#
@@ -47,6 +51,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:38}Predict_Time-I"){
 record(ao, "SR:OPS-C$(CELL)-ML{1wire:38}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:38}Error-I"){
+    field(DESC, "least-squares error")
 }
 
 ####39####
@@ -70,6 +78,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:39}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:39}Error-I"){
+    field(DESC, "least-squares error")
+}
 
 ####40####
 #slope#
@@ -91,6 +103,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:40}Predict_Time-I"){
 record(ao, "SR:OPS-C$(CELL)-ML{1wire:40}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:40}Error-I"){
+    field(DESC, "least-squares error")
 }
 
 ####41####
@@ -114,6 +130,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:41}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:41}Error-I"){
+    field(DESC, "least-squares error")
+}
 
 ####42####
 #slope#
@@ -135,6 +155,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:42}Predict_Time-I"){
 record(ao, "SR:OPS-C$(CELL)-ML{1wire:42}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:42}Error-I"){
+    field(DESC, "least-squares error")
 }
 
 ####43####
@@ -158,6 +182,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:43}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:43}Error-I"){
+    field(DESC, "least-squares error")
+}
 
 ####44####
 #slope#
@@ -179,6 +207,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:44}Predict_Time-I"){
 record(ao, "SR:OPS-C$(CELL)-ML{1wire:44}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:44}Error-I"){
+    field(DESC, "least-squares error")
 }
 
 ####45####
@@ -202,6 +234,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:45}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:45}Error-I"){
+    field(DESC, "least-squares error")
+}
 
 ####46####
 #slope#
@@ -223,6 +259,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:46}Predict_Time-I"){
 record(ao, "SR:OPS-C$(CELL)-ML{1wire:46}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:46}Error-I"){
+    field(DESC, "least-squares error")
 }
 
 ####47####
@@ -246,6 +286,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:47}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:47}Error-I"){
+    field(DESC, "least-squares error")
+}
 
 ####48####
 #slope#
@@ -267,6 +311,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:48}Predict_Time-I"){
 record(ao, "SR:OPS-C$(CELL)-ML{1wire:48}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:48}Error-I"){
+    field(DESC, "least-squares error")
 }
 
 ####49####
@@ -290,6 +338,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:49}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:49}Error-I"){
+    field(DESC, "least-squares error")
+}
 
 ####50####
 #slope#
@@ -311,6 +363,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:50}Predict_Time-I"){
 record(ao, "SR:OPS-C$(CELL)-ML{1wire:50}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:50}Error-I"){
+    field(DESC, "least-squares error")
 }
 
 ####51####
@@ -334,6 +390,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:51}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:51}Error-I"){
+    field(DESC, "least-squares error")
+}
 
 ####52####
 #slope#
@@ -355,6 +415,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:52}Predict_Time-I"){
 record(ao, "SR:OPS-C$(CELL)-ML{1wire:52}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:52}Error-I"){
+    field(DESC, "least-squares error")
 }
 
 ####53####
@@ -378,6 +442,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:53}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:53}Error-I"){
+    field(DESC, "least-squares error")
+}
 
 ####54####
 #slope#
@@ -399,6 +467,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:54}Predict_Time-I"){
 record(ao, "SR:OPS-C$(CELL)-ML{1wire:54}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:54}Error-I"){
+    field(DESC, "least-squares error")
 }
 
 ####55####
@@ -422,6 +494,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:55}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:55}Error-I"){
+    field(DESC, "least-squares error")
+}
 
 ####56####
 #slope#
@@ -443,6 +519,10 @@ record(ao, "SR:OPS-C$(CELL)-ML{1wire:56}Predict_Time-I"){
 record(ao, "SR:OPS-C$(CELL)-ML{1wire:56}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:56}Error-I"){
+    field(DESC, "least-squares error")
 }
 
 ####TOTALS####
@@ -576,4 +656,37 @@ record(calc, "SR:OPS-C$(CELL)-ML{max}Rate-I:2"){
     field(EGU,  "degC/day")
     field(INPA,	"SR:OPS-C$(CELL)-ML{max}Rate-I:1 PP")
     field(INPB, "SR:OPS-C$(CELL)-ML{max}Rate-I:2 NPP")
+}
+
+#least-squares error#
+record(calc, "SR:OPS-C$(CELL)-ML{max}Error-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:37}Error-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:38}Error-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:39}Error-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:40}Error-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:41}Error-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:42}Error-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:43}Error-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:44}Error-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:45}Error-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:46}Error-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Error-I"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C$(CELL)-ML{1wire:47}Error-I PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{1wire:48}Error-I NPP")
+    field(INPC, "SR:OPS-C$(CELL)-ML{1wire:49}Error-I NPP")
+    field(INPD, "SR:OPS-C$(CELL)-ML{1wire:50}Error-I NPP")
+    field(INPE, "SR:OPS-C$(CELL)-ML{1wire:51}Error-I NPP")
+    field(INPF, "SR:OPS-C$(CELL)-ML{1wire:52}Error-I NPP")
+    field(INPG, "SR:OPS-C$(CELL)-ML{1wire:53}Error-I NPP")
+    field(INPH, "SR:OPS-C$(CELL)-ML{1wire:54}Error-I NPP")
+    field(INPI, "SR:OPS-C$(CELL)-ML{1wire:55}Error-I NPP")
+    field(INPJ, "SR:OPS-C$(CELL)-ML{1wire:56}Error-I NPP")
+}
+record(calc, "SR:OPS-C$(CELL)-ML{max}Error-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-C$(CELL)-ML{max}Error-I:1 PP")
+    field(INPB, "SR:OPS-C$(CELL)-ML{max}Error-I:2 NPP")
 }

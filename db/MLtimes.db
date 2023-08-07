@@ -1,0 +1,32 @@
+##########################
+#####Prediction times#####
+##########################
+
+#T1#
+record(ao,  "SR:OPS-ML{}T1-SP"){
+    field(DESC, "prediction length T1")
+    field(EGU,  "days")
+    field(VAL,  "3")
+    info(autosaveFields, "VAL")
+}
+#T2#
+record(ao,  "SR:OPS-ML{}T2-SP"){
+    field(DESC, "prediction length T2")
+    field(EGU,  "days")
+    field(VAL,  "7")
+    info(autosaveFields, "VAL")
+}
+#T3#
+record(ao,  "SR:OPS-ML{}T3-SP"){
+    field(DESC, "prediction length T3")
+    field(EGU,  "days")
+    field(VAL,  "14")
+    info(autosaveFields, "VAL")
+}
+#T4#
+record(ao,  "SR:OPS-ML{}T4-SP"){
+    field(DESC, "prediction length T4")
+    field(EGU,  "days")
+    field(VAL,  "30")
+    info(autosaveFields, "VAL")
+}

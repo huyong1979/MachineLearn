@@ -1,0 +1,39 @@
+#ML for monitoring QM2 temperatures - outs template (including modes)
+
+#### $(MODE){C$(CELL):$(WIRE)} ####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C$(CELL):$(WIRE)}Slope-I"){
+    field(DESC, "slope of temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C$(CELL):$(WIRE)}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C$(CELL):$(WIRE)}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C$(CELL):$(WIRE)}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C$(CELL):$(WIRE)}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C$(CELL):$(WIRE)}Predict_Time-I"){
+    field(DESC, "predict. days until Warn temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C$(CELL):$(WIRE)}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least squares error#
+record(ao, "SR:OPS-ML-$(MODE){C$(CELL):$(WIRE)}Error-I"){
+    field(DESC, "least-squares error")
+}

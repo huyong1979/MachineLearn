@@ -1,0 +1,27 @@
+pv layers:
+
+1time = on demand version
+lls = continuous, linear least-squares model
+live_lstm = continuous, LSTM model
+
+
+was:
+SR:OPS-C01-ML{1wire:33}Slope-I
+
+will be:
+SR:OPS-ML-1time{C01:33}Slope-I
+SR:OPS-ML-lls{C01:33}Slope-I
+SR:OPS-ML-lstm{C01:33}Slope-I
+
+make 4 prediction times that are variables. (# days)
+"SR:OPS-ML{}T1-SP"  T1-T4
+default to: 3, 7, 14, 30
+
+
+replace:    SR:OPS-C$(CELL)-ML{1wire:   
+with:       SR:OPS-ML-$(mode){C$(CELL):
+
+replace     SR:OPS-C$(CELL)-ML{max}
+with:       SR:OPS-ML-$(mode){C$(CELL):max}
+
+

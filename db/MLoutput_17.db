@@ -26,6 +26,10 @@ record(ao, "SR:OPS-C17-ML{1wire:36}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:36}Error-I"){
+    field(DESC, "least-squares error")
+}
 
 ####37####
 #slope#
@@ -48,6 +52,10 @@ record(ao, "SR:OPS-C17-ML{1wire:37}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:37}Error-I"){
+    field(DESC, "least-squares error")
+}
 ####38####
 #slope#
 record(ao, "SR:OPS-C17-ML{1wire:38}Slope-I"){
@@ -68,6 +76,10 @@ record(ao, "SR:OPS-C17-ML{1wire:38}Predict_Time-I"){
 record(ao, "SR:OPS-C17-ML{1wire:38}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:38}Error-I"){
+    field(DESC, "least-squares error")
 }
 ####39####
 #slope#
@@ -90,6 +102,10 @@ record(ao, "SR:OPS-C17-ML{1wire:39}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:39}Error-I"){
+    field(DESC, "least-squares error")
+}
 ####40####
 #slope#
 record(ao, "SR:OPS-C17-ML{1wire:40}Slope-I"){
@@ -110,6 +126,10 @@ record(ao, "SR:OPS-C17-ML{1wire:40}Predict_Time-I"){
 record(ao, "SR:OPS-C17-ML{1wire:40}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:40}Error-I"){
+    field(DESC, "least-squares error")
 }
 ####41####
 #slope#
@@ -132,6 +152,10 @@ record(ao, "SR:OPS-C17-ML{1wire:41}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:41}Error-I"){
+    field(DESC, "least-squares error")
+}
 ####42####
 #slope#
 record(ao, "SR:OPS-C17-ML{1wire:42}Slope-I"){
@@ -152,6 +176,10 @@ record(ao, "SR:OPS-C17-ML{1wire:42}Predict_Time-I"){
 record(ao, "SR:OPS-C17-ML{1wire:42}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:42}Error-I"){
+    field(DESC, "least-squares error")
 }
 ####43####
 #slope#
@@ -174,6 +202,10 @@ record(ao, "SR:OPS-C17-ML{1wire:43}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:43}Error-I"){
+    field(DESC, "least-squares error")
+}
 ####44####
 #slope#
 record(ao, "SR:OPS-C17-ML{1wire:44}Slope-I"){
@@ -194,6 +226,10 @@ record(ao, "SR:OPS-C17-ML{1wire:44}Predict_Time-I"){
 record(ao, "SR:OPS-C17-ML{1wire:44}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:44}Error-I"){
+    field(DESC, "least-squares error")
 }
 ####45####
 #slope#
@@ -216,6 +252,10 @@ record(ao, "SR:OPS-C17-ML{1wire:45}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:45}Error-I"){
+    field(DESC, "least-squares error")
+}
 ####46####
 #slope#
 record(ao, "SR:OPS-C17-ML{1wire:46}Slope-I"){
@@ -236,6 +276,10 @@ record(ao, "SR:OPS-C17-ML{1wire:46}Predict_Time-I"){
 record(ao, "SR:OPS-C17-ML{1wire:46}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:46}Error-I"){
+    field(DESC, "least-squares error")
 }
 ####47####
 #slope#
@@ -258,6 +302,10 @@ record(ao, "SR:OPS-C17-ML{1wire:47}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:47}Error-I"){
+    field(DESC, "least-squares error")
+}
 ####48####
 #slope#
 record(ao, "SR:OPS-C17-ML{1wire:48}Slope-I"){
@@ -278,6 +326,10 @@ record(ao, "SR:OPS-C17-ML{1wire:48}Predict_Time-I"){
 record(ao, "SR:OPS-C17-ML{1wire:48}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:48}Error-I"){
+    field(DESC, "least-squares error")
 }
 ####49####
 #slope#
@@ -300,6 +352,10 @@ record(ao, "SR:OPS-C17-ML{1wire:49}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:49}Error-I"){
+    field(DESC, "least-squares error")
+}
 ####50####
 #slope#
 record(ao, "SR:OPS-C17-ML{1wire:50}Slope-I"){
@@ -320,6 +376,10 @@ record(ao, "SR:OPS-C17-ML{1wire:50}Predict_Time-I"){
 record(ao, "SR:OPS-C17-ML{1wire:50}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:50}Error-I"){
+    field(DESC, "least-squares error")
 }
 ####51####
 #slope#
@@ -342,6 +402,10 @@ record(ao, "SR:OPS-C17-ML{1wire:51}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:51}Error-I"){
+    field(DESC, "least-squares error")
+}
 ####52####
 #slope#
 record(ao, "SR:OPS-C17-ML{1wire:52}Slope-I"){
@@ -362,6 +426,10 @@ record(ao, "SR:OPS-C17-ML{1wire:52}Predict_Time-I"){
 record(ao, "SR:OPS-C17-ML{1wire:52}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:52}Error-I"){
+    field(DESC, "least-squares error")
 }
 ####53####
 #slope#
@@ -384,6 +452,10 @@ record(ao, "SR:OPS-C17-ML{1wire:53}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:53}Error-I"){
+    field(DESC, "least-squares error")
+}
 ####54####
 #slope#
 record(ao, "SR:OPS-C17-ML{1wire:54}Slope-I"){
@@ -404,6 +476,10 @@ record(ao, "SR:OPS-C17-ML{1wire:54}Predict_Time-I"){
 record(ao, "SR:OPS-C17-ML{1wire:54}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:54}Error-I"){
+    field(DESC, "least-squares error")
 }
 ####55####
 #slope#
@@ -426,6 +502,10 @@ record(ao, "SR:OPS-C17-ML{1wire:55}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:55}Error-I"){
+    field(DESC, "least-squares error")
+}
 ####56####
 #slope#
 record(ao, "SR:OPS-C17-ML{1wire:56}Slope-I"){
@@ -446,6 +526,10 @@ record(ao, "SR:OPS-C17-ML{1wire:56}Predict_Time-I"){
 record(ao, "SR:OPS-C17-ML{1wire:56}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:56}Error-I"){
+    field(DESC, "least-squares error")
 }
 ####57####
 #slope#
@@ -468,6 +552,10 @@ record(ao, "SR:OPS-C17-ML{1wire:57}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:57}Error-I"){
+    field(DESC, "least-squares error")
+}
 ####58####
 #slope#
 record(ao, "SR:OPS-C17-ML{1wire:58}Slope-I"){
@@ -489,6 +577,10 @@ record(ao, "SR:OPS-C17-ML{1wire:58}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
 }
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:58}Error-I"){
+    field(DESC, "least-squares error")
+}
 ####59####
 #slope#
 record(ao, "SR:OPS-C17-ML{1wire:59}Slope-I"){
@@ -509,6 +601,10 @@ record(ao, "SR:OPS-C17-ML{1wire:59}Predict_Time-I"){
 record(ao, "SR:OPS-C17-ML{1wire:59}Rate-I"){
     field(DESC, "% increase of initial Temp")
     field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-C17-ML{1wire:59}Error-I"){
+    field(DESC, "least-squares error")
 }
 
 ####TOTALS####
@@ -658,4 +754,41 @@ record(calc, "SR:OPS-C17-ML{max}Predict_Time-I"){
     field(EGU,  "degC/day")
     field(INPA,	"SR:OPS-C17-ML{max}Predict_Time-I:1 PP")
     field(INPB, "SR:OPS-C17-ML{max}Predict_Time-I:2 NPP")
+}
+
+#least-squares error#
+record(calc, "SR:OPS-C17-ML{max}Error-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C17-ML{1wire:36}Error-I PP")
+    field(INPB, "SR:OPS-C17-ML{1wire:37}Error-I NPP")
+    field(INPC, "SR:OPS-C17-ML{1wire:38}Error-I NPP")
+    field(INPD, "SR:OPS-C17-ML{1wire:39}Error-I NPP")
+    field(INPE, "SR:OPS-C17-ML{1wire:40}Error-I NPP")
+    field(INPF, "SR:OPS-C17-ML{1wire:41}Error-I NPP")
+    field(INPG, "SR:OPS-C17-ML{1wire:42}Error-I NPP")
+    field(INPH, "SR:OPS-C17-ML{1wire:43}Error-I NPP")
+    field(INPI, "SR:OPS-C17-ML{1wire:44}Error-I NPP")
+    field(INPJ, "SR:OPS-C17-ML{1wire:45}Error-I NPP")
+    field(INPK, "SR:OPS-C17-ML{1wire:46}Error-I NPP")
+    field(INPL, "SR:OPS-C17-ML{1wire:47}Error-I NPP")
+}
+record(calc, "SR:OPS-C17-ML{max}Error-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-C17-ML{1wire:48}Error-I PP")
+    field(INPB, "SR:OPS-C17-ML{1wire:49}Error-I NPP")
+    field(INPC, "SR:OPS-C17-ML{1wire:50}Error-I NPP")
+    field(INPD, "SR:OPS-C17-ML{1wire:51}Error-I NPP")
+    field(INPE, "SR:OPS-C17-ML{1wire:52}Error-I NPP")
+    field(INPF, "SR:OPS-C17-ML{1wire:53}Error-I NPP")
+    field(INPG, "SR:OPS-C17-ML{1wire:54}Error-I NPP")
+    field(INPH, "SR:OPS-C17-ML{1wire:55}Error-I NPP")
+    field(INPI, "SR:OPS-C17-ML{1wire:56}Error-I NPP")
+    field(INPJ, "SR:OPS-C17-ML{1wire:57}Error-I NPP")
+    field(INPK, "SR:OPS-C17-ML{1wire:58}Error-I NPP")
+    field(INPL, "SR:OPS-C17-ML{1wire:59}Error-I NPP")
+}
+record(calc, "SR:OPS-C17-ML{max}Error-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-C17-ML{max}Error-I:1 PP")
+    field(INPB, "SR:OPS-C17-ML{max}Error-I:2 NPP")
 }

@@ -1,0 +1,57 @@
+#ML for monitoring QM2 temperatures - outputs_default template
+#For Feng's measurement code
+
+#### C$(CELL):$(WIRE) ####
+#slope#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:$(WIRE)}Slope-I"){
+    field(DESC, "slope of temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:$(WIRE)}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:$(WIRE)}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:$(WIRE)}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:$(WIRE)}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:$(WIRE)}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:$(WIRE)}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least squares error#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:$(WIRE)}Error-I"){
+    field(DESC, "least square error")
+}
+#temp intercept#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:$(WIRE)}Intercept-I"){
+    field(DESC, "temp intercept value")
+}
+#rate_square#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:$(WIRE)}SQ_Rate-I"){
+    field(DESC, "temp model, square term")
+}
+#rate_exponential#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:$(WIRE)}EXP_Rate-I"){
+    field(DESC, "temp model, exponential term")
+}
+#predicted temperature#
+record(ao, "SR:OPS-C$(CELL)-ML{1wire:$(WIRE)}Predict_Temp-I"){
+    field(DESC, "predict. temp in 30 days")
+    field(EGU,  "days")
+}

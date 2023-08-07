@@ -1,0 +1,1032 @@
+#ML for monitoring QM2 temperatures - outputs_default
+
+#############################################################################################
+##    <cell 03>                                                                            ##
+##    <1-wire 55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74>                 ##
+#############################################################################################
+
+####55####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:55}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:55}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:55}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:55}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:55}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:55}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:55}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:55}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####56####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:56}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:56}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:56}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:56}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:56}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:56}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:56}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:56}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####57####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:57}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:57}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:57}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:57}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:57}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:57}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:57}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:57}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####58####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:58}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:58}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:58}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:58}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:58}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:58}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:58}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:58}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####59####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:59}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:59}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:59}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:59}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:59}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:59}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:59}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:59}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####60####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:60}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:60}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:60}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:60}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:60}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:60}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:60}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:60}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####61####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:61}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:61}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:61}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:61}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:61}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:61}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:61}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:61}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####62####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:62}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:62}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:62}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:62}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:62}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:62}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:62}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:62}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####63####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:63}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:63}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:63}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:63}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:63}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:63}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:63}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:63}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####64####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:64}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:64}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:64}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:64}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:64}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:64}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:64}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:64}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####65####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:65}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:65}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:65}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:65}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:65}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:65}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:65}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:65}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####66####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:66}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:66}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:66}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:66}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:66}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:66}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:66}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:66}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####67####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:67}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:67}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:67}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:67}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:67}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:67}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:67}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:67}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####68####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:68}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:68}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:68}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:68}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:68}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:68}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:68}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:68}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####69####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:69}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:69}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:69}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:69}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:69}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:69}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:69}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:69}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####70####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:70}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:70}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:70}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:70}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:70}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:70}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:70}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:70}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####71####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:71}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:71}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:71}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:71}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:71}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:71}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:71}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:71}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####72####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:72}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:72}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:62}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:72}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:72}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:72}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:72}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:72}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####73####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:73}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:73}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:73}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:73}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:73}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:73}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:73}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:73}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####74####
+#slope#
+record(ao, "SR:OPS-ML-$(MODE){C03:74}Slope-I"){
+    field(DESC, "slope of predicted temp curve")
+    field(EGU,  "degC/day")
+}
+#predicted temp#
+record(ao, "SR:OPS-ML-$(MODE){C03:74}T1_Temp-I"){
+    field(DESC, "predict. temp in T1 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:74}T2_Temp-I"){
+    field(DESC, "predict. temp in T2 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:74}T3_Temp-I"){
+    field(DESC, "predict. temp in T3 days")
+    field(EGU,  "degC")
+}
+record(ao, "SR:OPS-ML-$(MODE){C03:74}T4_Temp-I"){
+    field(DESC, "predict. temp in T4 days")
+    field(EGU,  "degC")
+}
+#predicted time#
+record(ao, "SR:OPS-ML-$(MODE){C03:74}Predict_Time-I"){
+    field(DESC, "predict. days until crit temp")
+    field(EGU,  "days")
+}
+#rate of change#
+record(ao, "SR:OPS-ML-$(MODE){C03:74}Rate-I"){
+    field(DESC, "% increase of initial Temp")
+    field(EGU,  "%/period")
+}
+#least-squares error#
+record(ao, "SR:OPS-ML-$(MODE){C03:74}Error-I"){
+    field(DESC, "least-squares error")
+}
+
+####TOTALS####
+#slope#
+record(calc, "SR:OPS-ML-$(MODE){C03:max}Slope-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:55}Slope-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:56}Slope-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:57}Slope-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:58}Slope-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:59}Slope-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:60}Slope-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:61}Slope-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:62}Slope-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:63}Slope-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:64}Slope-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}Slope-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:65}Slope-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:66}Slope-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:67}Slope-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:68}Slope-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:69}Slope-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:70}Slope-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:71}Slope-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:72}Slope-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:73}Slope-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:74}Slope-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}Slope-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-ML-$(MODE){C03:max}Slope-I:1 PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:max}Slope-I:2 NPP")
+}
+
+#predicted temp#
+##T1##
+record(calc, "SR:OPS-ML-$(MODE){C03:max}T1_Temp-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:55}T1_Temp-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:56}T1_Temp-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:57}T1_Temp-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:58}T1_Temp-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:59}T1_Temp-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:60}T1_Temp-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:61}T1_Temp-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:62}T1_Temp-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:63}T1_Temp-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:64}T1_Temp-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}T1_Temp-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:65}T1_Temp-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:66}T1_Temp-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:67}T1_Temp-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:68}T1_Temp-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:69}T1_Temp-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:70}T1_Temp-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:71}T1_Temp-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:72}T1_Temp-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:73}T1_Temp-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:74}T1_Temp-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}T1_Temp-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-ML-$(MODE){C03:max}T1_Temp-I:1 PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:max}T1_Temp-I:2 NPP")
+}
+##T2##
+#predicted temp#
+record(calc, "SR:OPS-ML-$(MODE){C03:max}T2_Temp-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:55}T2_Temp-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:56}T2_Temp-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:57}T2_Temp-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:58}T2_Temp-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:59}T2_Temp-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:60}T2_Temp-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:61}T2_Temp-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:62}T2_Temp-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:63}T2_Temp-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:64}T2_Temp-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}T2_Temp-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:65}T2_Temp-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:66}T2_Temp-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:67}T2_Temp-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:68}T2_Temp-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:69}T2_Temp-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:70}T2_Temp-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:71}T2_Temp-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:72}T2_Temp-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:73}T2_Temp-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:74}T2_Temp-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}T2_Temp-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-ML-$(MODE){C03:max}T2_Temp-I:1 PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:max}T2_Temp-I:2 NPP")
+}
+##T3##
+#predicted temp#
+record(calc, "SR:OPS-ML-$(MODE){C03:max}T3_Temp-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:55}T3_Temp-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:56}T3_Temp-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:57}T3_Temp-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:58}T3_Temp-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:59}T3_Temp-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:60}T3_Temp-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:61}T3_Temp-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:62}T3_Temp-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:63}T3_Temp-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:64}T3_Temp-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}T3_Temp-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:65}T3_Temp-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:66}T3_Temp-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:67}T3_Temp-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:68}T3_Temp-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:69}T3_Temp-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:70}T3_Temp-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:71}T3_Temp-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:72}T3_Temp-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:73}T3_Temp-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:74}T3_Temp-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}T3_Temp-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-ML-$(MODE){C03:max}T3_Temp-I:1 PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:max}T3_Temp-I:2 NPP")
+}
+##T4##
+#predicted temp#
+record(calc, "SR:OPS-ML-$(MODE){C03:max}T4_Temp-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:55}T4_Temp-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:56}T4_Temp-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:57}T4_Temp-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:58}T4_Temp-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:59}T4_Temp-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:60}T4_Temp-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:61}T4_Temp-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:62}T4_Temp-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:63}T4_Temp-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:64}T4_Temp-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}T4_Temp-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:65}T4_Temp-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:66}T4_Temp-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:67}T4_Temp-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:68}T4_Temp-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:69}T4_Temp-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:70}T4_Temp-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:71}T4_Temp-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:72}T4_Temp-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:73}T4_Temp-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:74}T4_Temp-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}T4_Temp-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-ML-$(MODE){C03:max}T4_Temp-I:1 PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:max}T4_Temp-I:2 NPP")
+}
+
+#predicted time#
+record(calc, "SR:OPS-ML-$(MODE){C03:max}Predict_Time-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:55}Predict_Time-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:56}Predict_Time-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:57}Predict_Time-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:58}Predict_Time-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:59}Predict_Time-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:60}Predict_Time-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:61}Predict_Time-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:62}Predict_Time-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:63}Predict_Time-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:64}Predict_Time-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}Predict_Time-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:65}Predict_Time-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:66}Predict_Time-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:67}Predict_Time-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:68}Predict_Time-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:69}Predict_Time-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:70}Predict_Time-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:71}Predict_Time-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:72}Predict_Time-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:73}Predict_Time-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:74}Predict_Time-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}Predict_Time-I"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-ML-$(MODE){C03:max}Predict_Time-I:1 PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:max}Predict_Time-I:2 NPP")
+}
+
+#rate#
+record(calc, "SR:OPS-ML-$(MODE){C03:max}Rate-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:55}Rate-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:56}Rate-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:57}Rate-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:58}Rate-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:59}Rate-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:60}Rate-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:61}Rate-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:62}Rate-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:63}Rate-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:64}Rate-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}Rate-I"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:65}Rate-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:66}Rate-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:67}Rate-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:68}Rate-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:69}Rate-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:70}Rate-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:71}Rate-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:72}Rate-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:73}Rate-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:74}Rate-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}Rate-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-ML-$(MODE){C03:max}Rate-I:1 PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:max}Rate-I:2 NPP")
+}
+
+#least-squares error#
+record(calc, "SR:OPS-ML-$(MODE){C03:max}Error-I:1"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:55}Error-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:56}Error-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:57}Error-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:58}Error-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:59}Error-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:60}Error-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:61}Error-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:62}Error-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:63}Error-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:64}Error-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}Error-I"){
+    field(EGU,  "degC/day")
+    field(INPA, "SR:OPS-ML-$(MODE){C03:65}Error-I PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:66}Error-I NPP")
+    field(INPC, "SR:OPS-ML-$(MODE){C03:67}Error-I NPP")
+    field(INPD, "SR:OPS-ML-$(MODE){C03:68}Error-I NPP")
+    field(INPE, "SR:OPS-ML-$(MODE){C03:69}Error-I NPP")
+    field(INPF, "SR:OPS-ML-$(MODE){C03:70}Error-I NPP")
+    field(INPG, "SR:OPS-ML-$(MODE){C03:71}Error-I NPP")
+    field(INPH, "SR:OPS-ML-$(MODE){C03:72}Error-I NPP")
+    field(INPI, "SR:OPS-ML-$(MODE){C03:73}Error-I NPP")
+    field(INPJ, "SR:OPS-ML-$(MODE){C03:74}Error-I NPP")
+}
+record(calc, "SR:OPS-ML-$(MODE){C03:max}Error-I:2"){
+    field(EGU,  "degC/day")
+    field(INPA,	"SR:OPS-ML-$(MODE){C03:max}Error-I:1 PP")
+    field(INPB, "SR:OPS-ML-$(MODE){C03:max}Error-I:2 NPP")
+}
