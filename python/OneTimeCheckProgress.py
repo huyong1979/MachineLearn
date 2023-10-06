@@ -11,9 +11,9 @@ import time
 from datetime import datetime 
 # Run this script at ~7am everyday:
 hour_min = time.strftime("%H, %M")
-if not '07, 00' <= hour_min <= '07, 02':
-    sys.exit()
-    #sys.exit("%s: not time yet to process Cell %d ..."%(datetime.now(), cell))
+if not '07, 00' <= hour_min <= '15, 33':
+    #sys.exit()
+    sys.exit("%s: not time yet to process Cell %d ..."%(datetime.now(), cell))
 
 print("%s: processing Cell %d ..."%(datetime.now(), cell))
 t0 = time.time()
@@ -34,13 +34,17 @@ TestPeriodCoef = int(caget('SR:OPS-ML{1time}Coef-SP')) # Coefficient of Test Per
 NumDataPerPeriod = int(caget('SR:OPS-ML{1time}DataAmnt-SP' )) # number of data in cleaning period: 48
 NumDayPerOperation = int(caget('SR:OPS-ML{1time}MeasLen-SP')) # operation days: 14
 NumDayPerPrediction = int(caget('SR:OPS-ML{1time}PredictLen-SP')) # prediction days: 30
+NumDayPerPrediction_1 = int(caget('SR:OPS-ML{}T1-SP')) # 3 days
+NumDayPerPrediction_2 = int(caget('SR:OPS-ML{}T2-SP')) # 7 days
+NumDayPerPrediction_3 = int(caget('SR:OPS-ML{}T3-SP')) # 14 days
+NumDayPerPrediction_4 = int(caget('SR:OPS-ML{}T4-SP')) # 30 days
 MLMethod = int(caget('SR:OPS-ML{1time}MLMethod-SP' )) # ML methods: 1. Least Squires; 2. Lasso;
 lambda_reg = int(caget('SR:OPS-ML{1time}LamdaReg-SP')) # regularization parameter: 1
 NumDataPerDay = int(24 * 3600 / (60 * Minute))  # 86400 / (60 * 5) = 288
 NumDataPerOperation = int(NumDataPerDay * NumDayPerOperation) # 288 * 14
-#Days = TestPeriodCoef  # Days Per Test
-TW = 45  # Warning Temperature
-TH = 60  # Hot Temperature
+# Days = TestPeriodCoef  # Days Per Test
+TW = int(caget('SR:OPS-ML{1time}ThreshTemp-SP')) # Warning Temperature: 40
+TH = int(caget('SR:OPS-ML{1time}WarnTemp-SP')) # Hot Temperature: 60
 
 # get different lists of PVs
 temp_pvs = [] # one-wire temperature PVs
@@ -70,7 +74,7 @@ predict_temp_pvs += ["SR:OPS-C%02d-ML{1wire:%02d}Predict_Temp-I"%(cell, n_wire) 
 predict_time_pvs += ["SR:OPS-C%02d-ML{1wire:%02d}Predict_Time-I"%(cell, n_wire) for n_wire in n_wires]
 #print(temp_pvs)
 
-#retrieve the archived history data and save them in a file (per cell)
+# retrieve the archived history data and save them in a file (per cell)
 end_time = None
 with h5py.File("python/Data/C%02d_QM_1Wires_Data.hdf5"%cell, "w") as fh5:
     data = arget(temp_pvs, start="-%d days"%NumDayPerOperation, end=end_time, match=EXACT)
@@ -111,8 +115,9 @@ print("it takes %f-sec to re-organize and transfer data in Cell %d"%(t2-t1, cell
 
 # Establish the ML Model based on the Given Operational Period
 from OneTimeCheckMLAlgorithms import ML_and_Prediction_One_Time_Check
-MLSystem = ML_and_Prediction_One_Time_Check(Minute, NumDataPerDay, NumDataPerOperation, 
-                                NumDataPerPeriod, MLMethod, lambda_reg, TW, TH, NumDayPerPrediction)
+MLSystem = ML_and_Prediction_One_Time_Check(Minute, NumDataPerDay, NumDataPerOperation, NumDataPerPeriod, MLMethod, TW, TH,
+                                            NumDayPerPrediction_1, NumDayPerPrediction_2,
+                                            NumDayPerPrediction_3, NumDayPerPrediction_4)
   
 # One Time Check ML Model and Prediction
 _, _, CellOutput = MLSystem.one_time_ml_check_cell(cell_data, cell_results)
@@ -125,8 +130,8 @@ t3 = time.time()
 print("it takes %f-sec to process data and get results in Cell %d"%(t3-t2, cell))
 
 caput(slope_pvs, CellOutput.slope)
-caput(rate_pvs, CellOutput.rate)
-caput(predict_temp_pvs, CellOutput.predict_temp)
+# caput(rate_pvs, CellOutput.rate)
+caput(predict_temp_pvs, CellOutput.predict_temp_1)
 caput(predict_time_pvs, CellOutput.predict_time)
 #t4 = time.time()
 #print("it takes %f-sec to caput the results\n"%(t4-t3))
