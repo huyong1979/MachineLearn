@@ -26,7 +26,8 @@ class CellDataPrep:
             del fh5[wire_pv]
             fh5[wire_pv] = update_wire_data
 
-        for num_pv in range(4, len(list(fh5.keys()))):
+        # for num_pv in range(4, len(list(fh5.keys()))):
+        for num_pv in range(0, len(list(fh5.keys()))):
             wire_pv = list(fh5.keys())[num_pv]
             wire_data = fh5[wire_pv][...]
             stp_len = int(60 * self.Minute)
@@ -79,10 +80,12 @@ class CellDataPrep:
     def data_transfer(self, cell, cell_data):
         fh5 = h5py.File("python/Data/C%02d_QM_1Wires_Data.hdf5"%(cell), "a")
 
-        for num_pv in range(4, len(list(fh5.keys()))):
+        # for num_pv in range(4, len(list(fh5.keys()))):
+        for num_pv in range(0, len(list(fh5.keys()))):
             wire_pv = list(fh5.keys())[num_pv]
             wire_data = fh5[wire_pv][...]
-            num = num_pv - 4
+            # num = num_pv - 4
+            num = num_pv
 
             cell_pv_matrix_data = cell_data.data_matrix_pv[num, :, :]
 

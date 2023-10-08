@@ -1,4 +1,4 @@
-file "/epics/iocs/MachineLearn/db/MLrun.db"
+file "/epics/iocs/MachineLearn/db/MLRun.db"
 {
 pattern
 {CELL}

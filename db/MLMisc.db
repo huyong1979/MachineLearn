@@ -1,0 +1,5 @@
+record(bo, "SR:OPS{ML}SaveFile-Cmd") {
+   field(VAL, "0")
+   field(ZNAM,"Not Save")
+   field(ONAM,"Save")
+}

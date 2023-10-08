@@ -81,7 +81,10 @@ dbLoadRecords("./db/MLoutMAX_default.db", "CELL=30, MODE=lls")
 
 dbLoadTemplate("./db/MLoutput.substitutions")
 dbLoadTemplate("./db/MLout.substitutions")
-dbLoadTemplate("./db/MLrun.substitutions")
+
+dbLoadTemplate("./db/MLRun.substitutions")
+dbLoadRecords("./db/MLWireData.db")
+dbLoadRecords("./db/MLMisc.db")
 
 # initialize the IOC with Access security control, autosave, caPutLog, etc. 
 #</epics/iocs/elauncher/commonInitWithAutoSave.cmd
