@@ -3,3 +3,15 @@ record(bo, "SR:OPS{ML}SaveFile-Cmd") {
    field(ZNAM,"Not Save")
    field(ONAM,"Save")
 }
+
+record(bo, "SR:OPS{ML}UseStitchedData-Cmd") {
+   field(VAL, "1")
+   field(ZNAM,"Not Use Stitched Data")
+   field(ONAM,"Use Stitched Data")
+}
+
+record(bo, "SR:OPS{ML}UseSimData-Cmd") {
+   field(VAL, "0")
+   field(ZNAM,"Not Use Simulated Data")
+   field(ONAM,"Use Simulated Data")
+}

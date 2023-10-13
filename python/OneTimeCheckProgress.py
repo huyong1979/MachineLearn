@@ -24,22 +24,22 @@ print("%s: processing Cell %d ..."%(datetime.now(), cell))
 t0 = time.time()
 
 # settings
-Minute = int(caget('SR:OPS-ML{1time}Time-SP' )) # 5 mins to get data
-TestPeriodCoef = int(caget('SR:OPS-ML{1time}Coef-SP')) # Coefficient of Test Period: 1
-NumDataPerPeriod = int(caget('SR:OPS-ML{1time}DataAmnt-SP' )) # number of data in cleaning period: 48
-NumDayPerOperation = int(caget('SR:OPS-ML{1time}MeasLen-SP')) # operation days: 14
-NumDayPerPrediction = int(caget('SR:OPS-ML{1time}PredictLen-SP')) # prediction days: 30
+Minute = int(caget('SR:OPS-ML{live}Time-SP' )) # 5 mins to get data
+TestPeriodCoef = int(caget('SR:OPS-ML{live}Coef-SP')) # Coefficient of Test Period: 1
+NumDataPerPeriod = int(caget('SR:OPS-ML{live}DataAmnt-SP' )) # number of data in cleaning period: 48
+NumDayPerOperation = int(caget('SR:OPS-ML{live}MeasLen-SP')) # operation days: 14
+NumDayPerPrediction = int(caget('SR:OPS-ML{live}PredictLen-SP')) # prediction days: 30
 NumDayPerPrediction_1 = int(caget('SR:OPS-ML{}T1-SP')) # 3 days
 NumDayPerPrediction_2 = int(caget('SR:OPS-ML{}T2-SP')) # 7 days
 NumDayPerPrediction_3 = int(caget('SR:OPS-ML{}T3-SP')) # 14 days
 NumDayPerPrediction_4 = int(caget('SR:OPS-ML{}T4-SP')) # 30 days
-MLMethod = int(caget('SR:OPS-ML{1time}MLMethod-SP' )) # ML methods: 1. Least Squires; 2. Lasso;
-lambda_reg = int(caget('SR:OPS-ML{1time}LamdaReg-SP')) # regularization parameter: 1
+MLMethod = int(caget('SR:OPS-ML{live}MLMethod-SP' )) # ML methods: 1. Least Squires; 2. Lasso;
+lambda_reg = int(caget('SR:OPS-ML{live}LamdaReg-SP')) # regularization parameter: 1
 NumDataPerDay = int(24 * 3600 / (60 * Minute))  # 86400 / (60 * 5) = 288
 NumDataPerOperation = int(NumDataPerDay * NumDayPerOperation) # 288 * 14
 # Days = TestPeriodCoef  # Days Per Test
-TW = int(caget('SR:OPS-ML{1time}ThreshTemp-SP')) # Warning Temperature: 40
-TH = int(caget('SR:OPS-ML{1time}WarnTemp-SP')) # Hot Temperature: 60
+TW = int(caget('SR:OPS-ML{live}ThreshTemp-SP')) # Warning Temperature: 40
+TH = int(caget('SR:OPS-ML{live}WarnTemp-SP')) # Hot Temperature: 60
 
 if cell == 3:
     n_wires = list(range(55, 75))
@@ -55,10 +55,16 @@ else:
 
 # different lists of PVs
 temp_pvs = ["SR:C%02d-MTM{1wire:%02d}T-I"%(cell, n_wire) for n_wire in n_wires]
-slope_pvs = ["SR:OPS-C%02d-ML{1wire:%02d}Slope-I"%(cell, n_wire) for n_wire in n_wires]
+#slope_pvs = ["SR:OPS-C%02d-ML{1wire:%02d}Slope-I"%(cell, n_wire) for n_wire in n_wires]
+slope_pvs = ["SR:OPS-ML-lls{C%02d:%02d}Slope-I"%(cell, n_wire) for n_wire in n_wires]
 rate_pvs = ["SR:OPS-C%02d-ML{1wire:%02d}Rate-I"%(cell, n_wire) for n_wire in n_wires]
-predict_temp_pvs = ["SR:OPS-C%02d-ML{1wire:%02d}Predict_Temp-I"%(cell, n_wire) for n_wire in n_wires]
-predict_time_pvs = ["SR:OPS-C%02d-ML{1wire:%02d}Predict_Time-I"%(cell, n_wire) for n_wire in n_wires]
+predict_time_pvs = ["SR:OPS-ML-lls{C%02d:%02d}Predict_Time-I"%(cell, n_wire) for n_wire in n_wires]
+#predict_temp_pvs = ["SR:OPS-C%02d-ML{1wire:%02d}Predict_Temp-I"%(cell, n_wire) for n_wire in n_wires]
+predict_t1_pvs = ["SR:OPS-ML-lls{C%02d:%02d}T1_Temp-I"%(cell, n_wire) for n_wire in n_wires]
+predict_t2_pvs = ["SR:OPS-ML-lls{C%02d:%02d}T2_Temp-I"%(cell, n_wire) for n_wire in n_wires]
+predict_t3_pvs = ["SR:OPS-ML-lls{C%02d:%02d}T3_Temp-I"%(cell, n_wire) for n_wire in n_wires]
+predict_t4_pvs = ["SR:OPS-ML-lls{C%02d:%02d}T4_Temp-I"%(cell, n_wire) for n_wire in n_wires]
+predict_error_pvs = ["SR:OPS-ML-lls{C%02d:%02d}Error-I"%(cell, n_wire) for n_wire in n_wires]
 #print(temp_pvs)
 
 from CellData import CellVariableData
@@ -114,13 +120,23 @@ for pv_name, (V, M) in data.items():
     caput(pv_name + '_Wf', valid_temp_data)
 
     _vals = np.empty((3, NumDataPerOperation))
-    _vals[0, :] = valid_temp_data
-    _vals[1, :] = df.index[:NumDataPerOperation]
+    if caget('SR:OPS{ML}UseStitchedData-Cmd'):
+        _vals[0, :] = valid_temp_data
+    else:
+        print("WARNING: part of the data may not be valid.")
+        _vals[0, :] = df.values[:NumDataPerOperation]
+
+    if caget('SR:OPS{ML}UseSimData-Cmd'):
+        print("WARNING: simulated data are being used.")
+        _vals[0, :] = [(cell*0.00005*t + temp_data[0]) for t in range(NumDataPerOperation)]
+
+    #_vals[1, :] = df.index[:NumDataPerOperation]
+    _vals[1, :] = [5*60*t for t in range(NumDataPerOperation)]
     _vals[2, :] = [0] * NumDataPerOperation
     data_matrix.append(_vals)
 
 cell_data.data_matrix_pv = np.stack(data_matrix)  # have to stack a list of 2-d array
-print(cell_data.data_matrix_pv)
+#print(cell_data.data_matrix_pv)
 
 if caget('SR:OPS{ML}SaveFile-Cmd'):
     with h5py.File("python/Data/C%02d_QM_1Wires_Data.hdf5"%cell, "w") as fh5:
@@ -142,17 +158,22 @@ MLSystem = ML_and_Prediction_One_Time_Check(Minute, NumDataPerDay, NumDataPerOpe
   
 # One Time Check ML Model and Prediction
 cell_data_cleaned, _, CellOutput = MLSystem.one_time_ml_check_cell(cell_data, cell_results)
-#print("Results of Cell %02d: "%cell)
-#print("The slopes parameters are: ", *CellOutput.slope)
+print("Results of Cell %02d: "%cell)
+print("The slopes parameters are: ", *CellOutput.slope)
 ##print("The rate parameters are: ", *CellOutput.rate)
 ##print("The predict temperature parameters are: ", *CellOutput.predict_temp)
-##print("The predict long time parameters are: ", *CellOutput.predict_time)
+#print("The predict long time parameters are: ", *CellOutput.predict_time)
 t3 = time.time()
 print("it takes %f-sec to process data and get results in Cell %d"%(t3-t1, cell))
 
 caput(slope_pvs, CellOutput.slope)
-# caput(rate_pvs, CellOutput.rate)
-caput(predict_temp_pvs, CellOutput.predict_temp_1)
+#caput(rate_pvs, CellOutput.rate)
 caput(predict_time_pvs, CellOutput.predict_time)
+#caput(predict_temp_pvs, CellOutput.predict_temp_1)
+caput(predict_t1_pvs, CellOutput.predict_temp_1)
+caput(predict_t2_pvs, CellOutput.predict_temp_2)
+caput(predict_t3_pvs, CellOutput.predict_temp_3)
+caput(predict_t4_pvs, CellOutput.predict_temp_4)
+caput(predict_error_pvs, CellOutput.ls_error)
 #t4 = time.time()
 #print("it takes %f-sec to caput the results\n"%(t4-t3))
