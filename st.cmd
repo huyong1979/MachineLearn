@@ -16,6 +16,7 @@ epicsEnvSet("ENGINEER","smithr x7385")
 dbLoadRecords("./db/MLtimes.db")
 dbLoadRecords("./db/MLinput.db", "MODE=1time")
 dbLoadRecords("./db/MLinput.db", "MODE=live")
+dbLoadRecords("./db/MLinput.db", "MODE=")
 
 dbLoadRecords("./db/MLoutputMAX_03.db")
 dbLoadRecords("./db/MLoutputMAX_17.db")

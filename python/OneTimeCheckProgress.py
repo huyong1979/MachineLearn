@@ -127,8 +127,9 @@ for pv_name, (V, M) in data.items():
         _vals[0, :] = df.values[:NumDataPerOperation]
 
     if caget('SR:OPS{ML}UseSimData-Cmd'):
-        print("WARNING: simulated data are being used.")
-        _vals[0, :] = [(cell*0.00005*t + temp_data[0]) for t in range(NumDataPerOperation)]
+        print("WARNING: simulated data are being used.!!!")
+        intercept = temp_data[-1] - NumDayPerOperation*cell*0.00005*(5*60)
+        _vals[0, :] = [(cell*0.00005*t + intercept) for t in range(NumDataPerOperation)]
 
     #_vals[1, :] = df.index[:NumDataPerOperation]
     _vals[1, :] = [5*60*t for t in range(NumDataPerOperation)]

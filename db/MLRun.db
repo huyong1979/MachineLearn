@@ -4,20 +4,12 @@ record(bo, "SR:OPS-C$(C1){ML}Run-Cmd") {
    field(VAL, "0")
    field(ZNAM,"Idle")
    field(ONAM,"Setting")
-   field(SCAN,"3600 second")
+   field(SCAN,"1800 second")
    field(FLNK,"SR:OPS-$(C2){ML}Run-Cmd")
 }
 record(bo, "SR:OPS-$(C2){ML}Run-Cmd") {
    field(DTYP,"Launcher")
    field(OUT, "@python3 /epics/iocs/MachineLearn/python/OneTimeCheckProgress.py $(C2)")
-   field(VAL, "0")
-   field(ZNAM,"Idle")
-   field(ONAM,"Setting")
-   field(FLNK,"SR:OPS-$(C3){ML}Run-Cmd")
-}
-record(bo, "SR:OPS-$(C3){ML}Run-Cmd") {
-   field(DTYP,"Launcher")
-   field(OUT, "@python3 /epics/iocs/MachineLearn/python/OneTimeCheckProgress.py $(C3)")
    field(VAL, "0")
    field(ZNAM,"Idle")
    field(ONAM,"Setting")

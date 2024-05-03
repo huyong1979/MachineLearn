@@ -9,7 +9,8 @@
 with open('MLWireData.db', 'w') as fd:
   fd.write('record(waveform, "SR-OPS{}Mode-Sts_Wf") {\n')
   fd.write('    field(DESC,"OP Status")\n')
-  fd.write('    field(NELM,"17280")\n')
+  #fd.write('    field(NELM,"17280")\n')
+  fd.write('    field(NELM,"207360")\n')
   fd.write('    field(FTVL,"UCHAR")\n')
   fd.write('}\n')
 
@@ -29,14 +30,14 @@ with open('MLWireData.db', 'w') as fd:
             #fd.write(f'record(waveform, "SR:C{C:02d}-MTM'+'{1wire:'+f'{N:02d}'+'}T-I_Wf_")\n')
             fd.write('record(waveform, "SR:C%02d-MTM{1wire:%02d}T-I_Wf_") {\n'%(cell, n_wire))
             fd.write('    field(DESC,"resampled history data")\n')
-            fd.write('    field(NELM,"17280")\n')
+            fd.write('    field(NELM,"207360")\n')
             fd.write('    field(FTVL,"DOUBLE")\n')
             fd.write('    field(EGU, "Celsius")\n')
             fd.write('}\n')
 
             fd.write('record(waveform, "SR:C%02d-MTM{1wire:%02d}T-I_Wf") {\n'%(cell, n_wire))
             fd.write('    field(DESC,"stitched data")\n')
-            fd.write('    field(NELM,"17280")\n')
+            fd.write('    field(NELM,"207360")\n')
             fd.write('    field(FTVL,"DOUBLE")\n')
             fd.write('    field(EGU, "Celsius")\n')
             fd.write('}\n')
