@@ -91,7 +91,7 @@ status_data = list(op_status[0][:, 0])  # op_status is a tuple
 status_ts = list(op_status[1]['sec'] + op_status[1]['ns'] / 10 ** 9)  # ns is needed
 status_df = resample_data(status_data, status_ts, 'SR-OPS{}Mode-Sts', NumDataPerOperation)
 #pd.set_option('display.max_rows', len(status_df))
-#print(status_df)
+#print(f"{len(status_data)}, {len(status_df)}")
 caput("SR-OPS{}Mode-Sts_Wf", status_df.values[:NumDataPerOperation])
 
 data = arget(temp_pvs, start="-%d days"%NumDayPerOperation, end=None, match=EXACT)
@@ -115,6 +115,7 @@ for pv_name, (V, M) in data.items():
     _data = [df.values[i] for i in range(NumDataPerOperation) if status_df.values[i] == 0]
     x_old = np.linspace(0, len(_data), len(_data))
     x_new = np.linspace(0, NumDataPerOperation, NumDataPerOperation)
+    #print(f"{pv_name}: {len(_data)} / {len(df.values)}, {len(x_old)}, {len(x_new)}")
     valid_temp_data = np.interp(x_new, x_old, _data)
     #print(len(valid_temp_data))
     caput(pv_name + '_Wf', valid_temp_data)

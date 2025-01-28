@@ -22,6 +22,7 @@ record(calc, "SR:OPS-C17-ML{max}Slope-I:1"){
     field(INPJ, "SR:OPS-C17-ML{1wire:45}Slope-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:46}Slope-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:47}Slope-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}Slope-I:2"){
     field(EGU,  "degC/day")
@@ -37,11 +38,14 @@ record(calc, "SR:OPS-C17-ML{max}Slope-I:2"){
     field(INPJ, "SR:OPS-C17-ML{1wire:57}Slope-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:58}Slope-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:59}Slope-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}Slope-I"){
     field(EGU,  "degC/day")
     field(INPA,	"SR:OPS-C17-ML{max}Slope-I:1 PP")
     field(INPB, "SR:OPS-C17-ML{max}Slope-I:2 NPP")
+    field(CALC,	"MAX(A,B)")
+    field(PREC, "4")
 }
 
 #rate#
@@ -59,6 +63,7 @@ record(calc, "SR:OPS-C17-ML{max}Rate-I:1"){
     field(INPJ, "SR:OPS-C17-ML{1wire:45}Rate-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:46}Rate-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:47}Rate-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}Rate-I:2"){
     field(EGU,  "degC/day")
@@ -74,11 +79,13 @@ record(calc, "SR:OPS-C17-ML{max}Rate-I:2"){
     field(INPJ, "SR:OPS-C17-ML{1wire:57}Rate-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:58}Rate-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:59}Rate-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}Rate-I"){
     field(EGU,  "degC/day")
     field(INPA,	"SR:OPS-C17-ML{max}Rate-I:1 PP")
     field(INPB, "SR:OPS-C17-ML{max}Rate-I:2 NPP")
+    field(CALC,	"MAX(A,B)")
 }
 
 #predicted temp#
@@ -97,6 +104,7 @@ record(calc, "SR:OPS-C17-ML{max}T1_Temp-I:1"){
     field(INPJ, "SR:OPS-C17-ML{1wire:45}T1_Temp-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:46}T1_Temp-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:47}T1_Temp-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}T1_Temp-I:2"){
     field(EGU,  "degC/day")
@@ -112,11 +120,13 @@ record(calc, "SR:OPS-C17-ML{max}T1_Temp-I:2"){
     field(INPJ, "SR:OPS-C17-ML{1wire:57}T1_Temp-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:58}T1_Temp-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:59}T1_Temp-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}T1_Temp-I"){
     field(EGU,  "degC/day")
     field(INPA,	"SR:OPS-C17-ML{max}T1_Temp-I:1 PP")
     field(INPB, "SR:OPS-C17-ML{max}T1_Temp-I:2 NPP")
+    field(CALC,	"MAX(A,B)")
 }
     #T2#
 record(calc, "SR:OPS-C17-ML{max}T2_Temp-I:1"){
@@ -133,6 +143,7 @@ record(calc, "SR:OPS-C17-ML{max}T2_Temp-I:1"){
     field(INPJ, "SR:OPS-C17-ML{1wire:45}T2_Temp-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:46}T2_Temp-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:47}T2_Temp-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}T2_Temp-I:2"){
     field(EGU,  "degC/day")
@@ -148,11 +159,13 @@ record(calc, "SR:OPS-C17-ML{max}T2_Temp-I:2"){
     field(INPJ, "SR:OPS-C17-ML{1wire:57}T2_Temp-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:58}T2_Temp-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:59}T2_Temp-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}T2_Temp-I"){
     field(EGU,  "degC/day")
     field(INPA,	"SR:OPS-C17-ML{max}T2_Temp-I:1 PP")
     field(INPB, "SR:OPS-C17-ML{max}T2_Temp-I:2 NPP")
+    field(CALC,	"MAX(A,B)")
 }
     #T3#
 record(calc, "SR:OPS-C17-ML{max}T3_Temp-I:1"){
@@ -169,6 +182,7 @@ record(calc, "SR:OPS-C17-ML{max}T3_Temp-I:1"){
     field(INPJ, "SR:OPS-C17-ML{1wire:45}T3_Temp-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:46}T3_Temp-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:47}T3_Temp-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}T3_Temp-I:2"){
     field(EGU,  "degC/day")
@@ -184,11 +198,13 @@ record(calc, "SR:OPS-C17-ML{max}T3_Temp-I:2"){
     field(INPJ, "SR:OPS-C17-ML{1wire:57}T3_Temp-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:58}T3_Temp-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:59}T3_Temp-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}T3_Temp-I"){
     field(EGU,  "degC/day")
     field(INPA,	"SR:OPS-C17-ML{max}T3_Temp-I:1 PP")
     field(INPB, "SR:OPS-C17-ML{max}T3_Temp-I:2 NPP")
+    field(CALC,	"MAX(A,B)")
 }
     #T4#
 record(calc, "SR:OPS-C17-ML{max}T4_Temp-I:1"){
@@ -205,6 +221,7 @@ record(calc, "SR:OPS-C17-ML{max}T4_Temp-I:1"){
     field(INPJ, "SR:OPS-C17-ML{1wire:45}T4_Temp-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:46}T4_Temp-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:47}T4_Temp-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}T4_Temp-I:2"){
     field(EGU,  "degC/day")
@@ -220,11 +237,13 @@ record(calc, "SR:OPS-C17-ML{max}T4_Temp-I:2"){
     field(INPJ, "SR:OPS-C17-ML{1wire:57}T4_Temp-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:58}T4_Temp-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:59}T4_Temp-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}T4_Temp-I"){
     field(EGU,  "degC/day")
     field(INPA,	"SR:OPS-C17-ML{max}T4_Temp-I:1 PP")
     field(INPB, "SR:OPS-C17-ML{max}T4_Temp-I:2 NPP")
+    field(CALC,	"MAX(A,B)")
 }
 
 #predicted time#
@@ -242,6 +261,7 @@ record(calc, "SR:OPS-C17-ML{max}Predict_Time-I:1"){
     field(INPJ, "SR:OPS-C17-ML{1wire:45}Predict_Time-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:46}Predict_Time-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:47}Predict_Time-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}Predict_Time-I:2"){
     field(EGU,  "degC/day")
@@ -257,11 +277,13 @@ record(calc, "SR:OPS-C17-ML{max}Predict_Time-I:2"){
     field(INPJ, "SR:OPS-C17-ML{1wire:57}Predict_Time-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:58}Predict_Time-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:59}Predict_Time-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}Predict_Time-I"){
     field(EGU,  "degC/day")
     field(INPA,	"SR:OPS-C17-ML{max}Predict_Time-I:1 PP")
     field(INPB, "SR:OPS-C17-ML{max}Predict_Time-I:2 NPP")
+    field(CALC,	"MAX(A,B)")
 }
 
 #least-squares error#
@@ -279,6 +301,7 @@ record(calc, "SR:OPS-C17-ML{max}Error-I:1"){
     field(INPJ, "SR:OPS-C17-ML{1wire:45}Error-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:46}Error-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:47}Error-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}Error-I:2"){
     field(EGU,  "degC/day")
@@ -294,9 +317,11 @@ record(calc, "SR:OPS-C17-ML{max}Error-I:2"){
     field(INPJ, "SR:OPS-C17-ML{1wire:57}Error-I NPP")
     field(INPK, "SR:OPS-C17-ML{1wire:58}Error-I NPP")
     field(INPL, "SR:OPS-C17-ML{1wire:59}Error-I NPP")
+    field(CALC, "MAX(A,B,C,D,E,F,G,H,I,J,K,L)")
 }
 record(calc, "SR:OPS-C17-ML{max}Error-I"){
     field(EGU,  "degC/day")
     field(INPA,	"SR:OPS-C17-ML{max}Error-I:1 PP")
     field(INPB, "SR:OPS-C17-ML{max}Error-I:2 NPP")
+    field(CALC,	"MAX(A,B)")
 }
